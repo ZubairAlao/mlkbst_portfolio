@@ -3,6 +3,7 @@ import React from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import "/public/assets/css/particles.css"; 
+import ContactMe from "./components/ContactMe";
 
 const App: React.FC = () => {
   return (
@@ -31,7 +32,7 @@ const App: React.FC = () => {
             id="dynamicHeadline"
             className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
           >
-            Secure Your Future with{" "}
+            Mukhtar Malik{" "}
             <span id="dynamicWords" className="text-green-500 font-bold">
               Ethical Hacking Done Right
             </span>
@@ -72,8 +73,9 @@ const App: React.FC = () => {
           style={{ opacity: 0 }}  // This ensures it's initially invisible but still rendered
         >
           <img
-            src="./assets/images/hacker.png"
+            src="./assets/images/hacker-hero.jpg"
             alt="hacker"
+            className="rounded-full"
           />
         </div>
       </div>
@@ -85,21 +87,21 @@ const App: React.FC = () => {
           <dl className="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
               <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-5xl md:text-7xl font-extrabold">
-                      <span data-counter-target="20">0</span>+
+                      <span data-counter-target="2">0</span>+
                   </dt>
                   <dd className="font-light text-2xl text-gray-500 dark:text-gray-400">Years of Experience</dd>
               </div>
               <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-5xl md:text-7xl font-extrabold">
-                      <span data-counter-target="300">0</span>+
+                      <span data-counter-target="30">0</span>+
                   </dt>
-                  <dd className="font-light text-2xl text-gray-500 dark:text-gray-400">Engagements Completed</dd>
+                  <dd className="font-light text-2xl text-gray-500 dark:text-gray-400">Security Projects</dd>
               </div>
               <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-5xl md:text-7xl font-extrabold">
-                      <span data-counter-target="10000">0</span>
+                      <span data-counter-target="100">∞</span>
                   </dt>
-                  <dd className="font-light text-2xl text-gray-500 dark:text-gray-400">Cups of Dark Roast Coffee</dd>
+                  <dd className="font-light text-2xl text-gray-500 dark:text-gray-400">Curiosity & Drive</dd>
               </div>
           </dl>
                     </div>
@@ -112,10 +114,10 @@ const App: React.FC = () => {
 
               <div className="max-w-screen-md mb-8 lg:mb-12 mx-auto">
                 <h2 className="mb-4 text-4xl md:text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                Breaking Systems, Building Security
+                Breaking Systems. Strengthening the Web
                 </h2>
                 <p className="text-gray-500 text-2xl dark:text-gray-400">
-                Specialized in uncovering critical security vulnerabilities through advanced penetration testing, helping organizations fortify their digital infrastructure before real threats emerge.
+                Specializing in penetration testing, exploit analysis, and secure system architecture.
                 </p>
               </div>
 
@@ -158,7 +160,7 @@ const App: React.FC = () => {
                   In-depth analysis and testing of web applications to uncover security flaws, injection vulnerabilities, authentication weaknesses, and other critical risks affecting your platforms.
                   </p>
                 </div>
-                <div className="transform transition-all duration-300 hover:scale-105 group">
+                {/* <div className="transform transition-all duration-300 hover:scale-105 group">
                   <div className="flex justify-center mx-auto items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                   <svg className="w-[48px] h-[48px] text-gray-800 dark:text-white transition-colors duration-300 group-hover:text-green-500 group-hover:scale-125" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M6 4h12M6 4v16M6 4H5m13 0v16m0-16h1m-1 16H6m12 0h1M6 20H5M9 7h1v1H9V7Zm5 0h1v1h-1V7Zm-5 4h1v1H9v-1Zm5 0h1v1h-1v-1Zm-3 4h2a1 1 0 0 1 1 1v4h-4v-4a1 1 0 0 1 1-1Z"/>
@@ -169,8 +171,8 @@ const App: React.FC = () => {
                   <p className="text-gray-500 text-xl dark:text-gray-400">
                   Thorough evaluation of network architecture, firewall configurations, access controls, and routing protocols to ensure robust security across your entire digital infrastructure.
                   </p>
-                </div>
-                <div className="transform transition-all duration-300 hover:scale-105 group">
+                </div> */}
+                {/* <div className="transform transition-all duration-300 hover:scale-105 group">
                   <div className="flex justify-center mx-auto items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                   <svg className="w-[48px] h-[48px] text-gray-800 dark:text-white transition-colors duration-300 group-hover:text-green-500 group-hover:scale-125" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.7141 15h4.268c.4043 0 .732-.3838.732-.8571V3.85714c0-.47338-.3277-.85714-.732-.85714H6.71411c-.55228 0-1 .44772-1 1v4m10.99999 7v-3h3v3h-3Zm-3 6H6.71411c-.55228 0-1-.4477-1-1 0-1.6569 1.34315-3 3-3h2.99999c1.6569 0 3 1.3431 3 3 0 .5523-.4477 1-1 1Zm-1-9.5c0 1.3807-1.1193 2.5-2.5 2.5s-2.49999-1.1193-2.49999-2.5S8.8334 9 10.2141 9s2.5 1.1193 2.5 2.5Z"/>
@@ -181,8 +183,8 @@ const App: React.FC = () => {
                   <p className="text-gray-500 text-xl dark:text-gray-400">
                   Strategic guidance and expert recommendations to strengthen your security posture, implement industry best practices, and develop effective incident response procedures.
                   </p>
-                </div>
-                <div className="transform transition-all duration-300 hover:scale-105 group">
+                </div> */}
+                {/* <div className="transform transition-all duration-300 hover:scale-105 group">
                   <div className="flex justify-center mx-auto items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                   <svg className="w-[48px] h-[48px] text-gray-800 dark:text-white transition-colors duration-300 group-hover:text-green-500 group-hover:scale-125" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 5 9 4V3m5 2 1-1V3m-3 6v11m0-11a5 5 0 0 1 5 5m-5-5a5 5 0 0 0-5 5m5-5a4.959 4.959 0 0 1 2.973 1H15V8a3 3 0 0 0-6 0v2h.027A4.959 4.959 0 0 1 12 9Zm-5 5H5m2 0v2a5 5 0 0 0 10 0v-2m2.025 0H17m-9.975 4H6a1 1 0 0 0-1 1v2m12-3h1.025a1 1 0 0 1 1 1v2M16 11h1a1 1 0 0 0 1-1V8m-9.975 3H7a1 1 0 0 1-1-1V8"/>
@@ -192,7 +194,7 @@ const App: React.FC = () => {
                   <p className="text-gray-500 text-xl dark:text-gray-400">
                   Discovered and responsibly disclosed over 50 critical vulnerabilities in major platforms, contributing to the security of millions of users worldwide through ethical hacking.
                   </p>
-                </div>
+                </div> */}
                 <div className="transform transition-all duration-300 hover:scale-105 group">
                   <div className="flex justify-center mx-auto items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                   <svg className="w-[48px] h-[48px] text-gray-800 dark:text-white transition-colors duration-300 group-hover:text-green-500 group-hover:scale-125" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -279,15 +281,16 @@ const App: React.FC = () => {
           <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-8 lg:px-6">
             <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                About Me, HAK3R
+                About Me, MLKBST
               </h2>
               <p className="mb-4 text-3xl">
-              I've dedicated my career to finding the vulnerabilities that others miss. My journey began with CTF competitions and evolved into a full-time commitment to making digital spaces more secure.
+              I’m obsessed with uncovering what hides beneath the surface — the glitches, gaps, and secrets most people never notice.
               </p>
+              <p className="mb-4 text-3xl">My work blends creativity, logic, and a relentless curiosity for how systems tick. Every exploit I find is another step toward a safer digital world.</p>
               <p className="text-xl">
-             My approach combines creative problem-solving with rigorous methodology, ensuring no stone is left unturned in the pursuit of robust security.
+             Now, I spend my days (and nights) breaking things — responsibly — to build them back stronger.
               </p>
-              <a href="#" className="inline-flex mt-8 items-center justify-center px-5 py-4 text-base font-medium text:3xl text-center text-gray-900 border-4 border-green-300  hover:bg-green-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-green-700 dark:hover:bg-green-700 dark:focus:ring-gray-800"
+              <a href="/Malik_Mukthar_CV.pdf" download="Malik_Mukthar_Cybersecurity_CV.pdf" className="inline-flex mt-8 items-center justify-center px-5 py-4 text-base font-medium text:3xl text-center text-gray-900 border-4 border-green-300  hover:bg-green-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-green-700 dark:hover:bg-green-700 dark:focus:ring-gray-800"
           >
             Download C.V.
           </a>
@@ -295,17 +298,17 @@ const App: React.FC = () => {
             <div className="grid grid-cols-2 gap-4 mt-8">
             <img
               className="w-full transition-all duration-300 hover:saturate-150 hover:brightness-75 hover:hue-rotate-15"
-              src="./assets/images/office-long-2.png"
-              alt="office content 1"
+              src="./assets/images/hacker_operating.jpg"
+              alt="hacker content 1"
             />
             <img
               className="mt-4 w-full lg:mt-10 transition-all duration-300 hover:saturate-150 hover:brightness-75 hover:hue-rotate-15"
-              src="./assets/images/office-long-1.png"
-              alt="office content 2"
+              src="./assets/images/computer_room.jpg"
+              alt="computer room content 2"
             />
           </div>
           </div>
-          <div className="max-w-screen-xl px-4 pb-8 mx-auto text-center lg:pb-16 lg:px-6">
+          {/* <div className="max-w-screen-xl px-4 pb-8 mx-auto text-center lg:pb-16 lg:px-6">
             <figure className="max-w-screen-md mx-auto">
               <svg
                 className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
@@ -339,7 +342,7 @@ const App: React.FC = () => {
                 </div>
               </figcaption>
             </figure>
-          </div>
+          </div> */}
         </section>
         <section id="contact" className="bg-white dark:bg-black">
           <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
@@ -360,72 +363,9 @@ const App: React.FC = () => {
             </div>
           </div>
         </section>
+
         {/* #### CONTACT SECTION #### */}
-        <section className="bg-white dark:bg-black transition-all duration-300 hover:scale-105">
-          <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-            Book a consultation today – your security is my priority
-            </h2>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 text-xl lg:text-2xl">
-            Protect your digital assets and maintain customer trust with proactive security testing.
-            </p>
-            <form action="#" className="space-y-8">
-            <div>
-                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                  Your name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="shadow-sm bg-gray-50 border-4 border-green-300 text-gray-900 text-sm  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="John Doe"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                  Your email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="shadow-sm bg-gray-50 border-4 border-green-300 text-gray-900 text-sm  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="name@company.com"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="block p-3 w-full text-sm text-gray-900 bg-gray-50  border-4 border-green-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-black dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="Let us know how we can help you"
-                  required
-                />
-              </div>
-              <div className="sm:col-span-2">
-                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
-                  Your message
-                </label>
-                <textarea
-                  id="message"
-                  rows={6}
-                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50  shadow-sm border-4 border-green-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-black dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                  placeholder="Leave a comment..."
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="py-3 px-5 text-lx font-medium text-center text-white bg-green-600 hover:bg-green-700 border-2 border-green-600 rounded-none sm:w-fit focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:border-green-600 dark:focus:ring-green-800"
-              >
-                Send message
-              </button>
-            </form>
-          </div>
-        </section>
+        <ContactMe />
       </main>
       <Footer />
     </>

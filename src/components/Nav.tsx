@@ -51,6 +51,7 @@ const Nav: React.FC = () => {
     }
   };
 
+
   return (
     <Navbar 
     className={`fixed w-full transition-all duration-300 ${
@@ -64,19 +65,19 @@ const Nav: React.FC = () => {
         <img 
           src="./assets/images/hacker.png" 
           className={`mr-3 transition-all duration-300 ${
-            isScrolled ? 'h-5 sm:h-7' : 'h-6 sm:h-9'
+            isScrolled ? 'h-7 sm:h-7' : 'h-6 sm:h-9'
           }`} 
           alt="Logo" 
         />
         <span className={`self-center whitespace-nowrap font-bold dark:text-white transition-all duration-300 ${
           isScrolled ? 'text-lg' : 'text-2xl'
         }`}>
-          HAK3R
+          MLKBST
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
         <DarkThemeToggle />
-        <a
+        {/* <a
         href="https://github.com/Dan-Duran/hak3r"
         target="_blank"
         rel="noopener noreferrer"
@@ -98,7 +99,7 @@ const Nav: React.FC = () => {
           />
         </svg>
         <span className="text-white font-medium">FREE Download</span>
-      </a>
+      </a> */}
         <button
           type="button"
           onClick={() => scrollToSection('contact')}

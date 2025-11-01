@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const phrases = [
+                "Your First Line of Defense.",
                 "Ethical Hacking Done Right",
                 "Cybersecurity Solutions That Matter",
-                "Defending Your Digital Frontier",
-                "Innovative Security Strategies",
-                "Protecting Your Digital Assets"
+               "Securing the Future, One System at a Time.",
+                "Protecting Your Digital Assets",
             ];
 
             let phraseIndex = 0;
