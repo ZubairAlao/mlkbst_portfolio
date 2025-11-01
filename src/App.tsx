@@ -99,7 +99,7 @@ const App: React.FC = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-5xl md:text-7xl font-extrabold">
-                      <span data-counter-target="100">∞</span>
+                      <span data-counter-target="100">100</span>%
                   </dt>
                   <dd className="font-light text-2xl text-gray-500 dark:text-gray-400">Curiosity & Drive</dd>
               </div>
